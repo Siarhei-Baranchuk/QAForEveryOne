@@ -3,6 +3,10 @@ const SecurePage = require('../pageobjects/secure.page');
 
 describe('My Login application', () => {
 
+    before(() => {
+        browser.maximizeWindow()
+    })
+
     it('should login with valid credentials',
         async () => {
         await LoginPage.open();
